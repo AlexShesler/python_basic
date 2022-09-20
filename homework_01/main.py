@@ -45,4 +45,4 @@ def filter_numbers(numbers_list: list, filter_type: str) -> list:
     if filter_type == "even":
         return list(filter(lambda x: x % 2 == 0, numbers_list))
     if filter_type == "prime":
-        return list(filter(lambda x: is_prime(x), numbers_list))
+        return list(filter(is_prime, numbers_list))
