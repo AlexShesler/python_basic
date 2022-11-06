@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "python-basic"
+version = "0.1.0"
+description = ""
+authors = ["Alex Shesler"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "python_basic"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+fastapi = "^0.85.1"
+uvicorn = {extras = ["standart"], version = "^0.19.0"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
